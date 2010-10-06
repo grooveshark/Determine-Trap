@@ -28,9 +28,9 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
     private static final int SUCCESS_DIALOG_ID = 1;
     private static final int GAME_OVER_ID = 2;
     
-    private static final int NUM_ROUNDS = 3;
-    private static final int NUM_TRAPS_PER_ROUND = 3;
-    private static final int NUM_ROUNDS_TO_WIN = 2;
+    public static final int NUM_ROUNDS = 3;
+    public static final int NUM_TRAPS_PER_ROUND = 3;
+    public static final int NUM_ROUNDS_TO_WIN = 2;
 
     private Button trapButton;
     private Button notTrapButton;
@@ -42,6 +42,7 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
     private Trap currentTrap;
     private MediaPlayer trapSound;
     private MediaPlayer successSound;
+    private MediaPlayer gameOverSound;
     private int numTrapsPlayed;
     private int currentRound;
     private int numCorrect;
@@ -67,7 +68,9 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
                         // Correct!
                         numCorrect++;
                         successSound.start();
-                        showDialog(SUCCESS_DIALOG_ID);
+                        Bundle info = new Bundle();
+                        info.putInt("resId", R.string.trap_avoided);
+                        showDialog(SUCCESS_DIALOG_ID, info);
                     } else {
                         // Incorrect
                         trapSound.start();
@@ -84,7 +87,9 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
                         // Correct
                         numCorrect++;
                         successSound.start();
-                        showDialog(SUCCESS_DIALOG_ID);
+                        Bundle info = new Bundle();
+                        info.putInt("resId", R.string.was_not_a_trap);
+                        showDialog(SUCCESS_DIALOG_ID, info);
                     } else {
                         // Incorrect
                         trapSound.start();
@@ -95,6 +100,7 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
 
         trapSound = MediaPlayer.create(this, R.raw.itsatrap);
         successSound = MediaPlayer.create(this, R.raw.temple);
+        gameOverSound = MediaPlayer.create(this, R.raw.indigo);
 
         prepareTraps();
         chooseNextTrap();
@@ -127,6 +133,7 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
         }
         if (gameOver) {
             Log.d("GameActivity", "Game over!");
+            gameOverSound.start();
             showDialog(GAME_OVER_ID);
         }
     }
@@ -163,6 +170,7 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
                     .setIcon(android.R.drawable.ic_dialog_info)
                     .setTitle(R.string.guess_correct)
                     .setNeutralButton(android.R.string.ok, this)
+                    .setMessage("") // Have to set the message to *something* otherwise onPrepareDialog cant modify this
                     .create();
         } else if (id == GAME_OVER_ID) {
             return new AlertDialog.Builder(this).setCancelable(false)
@@ -192,7 +200,8 @@ public class GameActivity extends Activity implements DialogInterface.OnClickLis
     public void onPrepareDialog(int id, Dialog dialog, Bundle args)
     {
         if (id == SUCCESS_DIALOG_ID) {
-
+            int resId = args.getInt("resId", 0);
+            ((AlertDialog) dialog).setMessage(getString(resId));
         }
     }
 
