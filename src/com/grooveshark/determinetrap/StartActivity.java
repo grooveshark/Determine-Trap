@@ -32,7 +32,7 @@ public class StartActivity extends Activity
                 @Override
                 public void onClick(View view)
                 {
-                    Intent i = new Intent(StartActivity.this, ScoreActivity.class);
+                    Intent i = new Intent(StartActivity.this, GameActivity.class);
                     startActivity(i);
                     finish();
                 }
