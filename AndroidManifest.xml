@@ -12,8 +12,8 @@
             </intent-filter>
         </activity>
         <activity android:name="GameActivity"
-                  android:label="@string/trap_yes_no">
+                  android:label="@string/trap_yes_no"/>
         <activity android:name="ScoreActivity"
-                  android:label="@string/your_score">
+                  android:label="@string/your_score"/>
     </application>
 </manifest> 

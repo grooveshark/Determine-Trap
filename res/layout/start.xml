@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView  
+		android:id="@+id/welcome_message"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="50dip"
+	    android:gravity="center"
+	    android:text="Welcome to Admiral Ackbar Quiz!"
+	    android:textColor="#FFFFFF"
+	    android:textSize="30dip"
+	    />
+	    
+	<ImageView
+    	android:id="@+id/ackbar_image"
+    	android:layout_width="120dip"
+    	android:layout_height="180dip"
+    	android:layout_centerHorizontal="true"
+    	android:layout_below="@id/welcome_message"
+    	android:layout_marginTop="30dip"
+    	android:src="@drawable/ackbar"
+    	/>
+    
+	<TextView  
+		android:id="@+id/games_played"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/ackbar_image"
+	    android:layout_marginTop="30dip"
+	    android:text="Games Played: 0"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20dip"
+	    />
+	   
+	<TextView  
+		android:id="@+id/games_won"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/games_played"
+	    android:text="Games Won: 0"
+	    android:textColor="#FFFFFF"
+	    android:textSize="20dip"
+	    /> 
+	    
+	 <Button 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="30dip"
+	    android:text="Start"
+	    /> 
+	    
+</RelativeLayout>
+
