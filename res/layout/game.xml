@@ -4,57 +4,71 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#000000"
+    android:gravity="bottom"
     >
     
     <ImageView
     	android:id="@+id/ackbar_image"
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
-    	android:layout_gravity="center_horizontal"
     	android:layout_margin="10dip"
-    	/>
+    	android:src="@drawable/admiralackbar" />
     
 	<TextView  
         android:id="@+id/statement"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
+	    android:padding="5dip"
 	    android:text="Question from Ackbar"
-	    android:background="#FFFFFF"
-	    />
+	    android:textColor="#FFFFFF"
+	    android:textSize="22dip"
+	    android:background="#AAAAAA"
+	    android:gravity="center" />
 	    
 	<LinearLayout
     	android:orientation="horizontal"
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
-    	android:background="#FFFFFF"
-    	>
+    	android:layout_marginTop="15dip"
+    	android:padding="5dip"
+    	android:background="#AAAAAA" 
+    	android:gravity="center">
     	
 	    	<TextView android:id="@+id/round"
 		        android:layout_width="wrap_content" 
 		        android:layout_height="wrap_content" 
-		        android:text="@string/round" />
+		        android:layout_marginRight="5dip"
+		        android:text="@string/round"
+		        android:textSize="20dip"
+		        android:textColor="#FFFFFF" />
 		    
 	    	<TextView android:id="@+id/score" 
 		        android:layout_width="wrap_content" 
-		        android:layout_height="wrap_content" 
-		        android:text="@string/score" />
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="5dip" 
+		        android:text="@string/score"
+		        android:textSize="20dip" 
+		        android:textColor="#FFFFFF"/>
     	
     </LinearLayout>
     
     <LinearLayout
     	android:orientation="horizontal"
     	android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:background="#FFFFFF">
+    	android:layout_height="50dip"
+    	android:layout_margin="30dip"
+    	android:gravity="center">
     	
 	    	<Button android:id="@+id/trap_button" 
-		        android:layout_width="wrap_content" 
-		        android:layout_height="wrap_content" 
+		        android:layout_width="120dip" 
+		        android:layout_height="50dip"
+		        android:layout_marginRight="15dip"
 		        android:text="@string/its_a_trap"/>
 		    
 	    	<Button android:id="@+id/not_trap_button"
-		        android:layout_width="wrap_content" 
-		        android:layout_height="wrap_content" 
+		        android:layout_width="120dip" 
+		        android:layout_height="50dip"
+		        android:layout_marginLeft="15dip"
 		        android:text="@string/not_a_trap"/>
     	
     </LinearLayout>

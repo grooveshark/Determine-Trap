@@ -9,7 +9,7 @@
 	    android:layout_width="wrap_content" 
 	    android:layout_height="wrap_content" 
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="50dip"
+	    android:layout_marginTop="45dip"
 	    android:gravity="center"
 	    android:text="@string/welcome"
 	    android:textColor="#FFFFFF"
@@ -22,7 +22,7 @@
     	android:layout_height="180dip"
     	android:layout_centerHorizontal="true"
     	android:layout_below="@id/welcome_message"
-    	android:layout_marginTop="30dip"
+    	android:layout_marginTop="20dip"
     	android:src="@drawable/ackbar"
     	/>
     
@@ -31,30 +31,29 @@
 	    android:layout_width="wrap_content" 
 	    android:layout_height="wrap_content" 
 	    android:layout_centerHorizontal="true"
-	    android:layout_below="@id/ackbar_image"
-	    android:layout_marginTop="30dip"
+	    android:layout_above="@+id/games_won"
 	    android:text="@string/games_played"
 	    android:textColor="#FFFFFF"
 	    android:textSize="20dip"
 	    />
 	   
 	<TextView  
-		android:id="@+id/games_won"
+		android:id="@id/games_won"
 	    android:layout_width="wrap_content" 
 	    android:layout_height="wrap_content" 
 	    android:layout_centerHorizontal="true"
-	    android:layout_below="@id/games_played"
+	    android:layout_above="@+id/start_button"
 	    android:text="@string/games_won"
 	    android:textColor="#FFFFFF"
 	    android:textSize="20dip"
 	    /> 
 	    
 	 <Button 
-        android:id="@+id/start_button"
+        android:id="@id/start_button"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:layout_alignParentBottom="true"
-	    android:layout_margin="30dip"
+	    android:layout_margin="20dip"
 	    android:text="@string/start"
 	    /> 
 	    
