@@ -15,6 +15,7 @@
     	/>
     
 	<TextView  
+        android:id="@+id/statement"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:text="Question from Ackbar"
@@ -28,17 +29,15 @@
     	android:background="#FFFFFF"
     	>
     	
-	    	<TextView  
-		    android:layout_width="wrap_content" 
-		    android:layout_height="wrap_content" 
-		    android:text="Round: "
-		    />
+	    	<TextView android:id="@+id/round"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/round" />
 		    
-	    	<TextView  
-		    android:layout_width="wrap_content" 
-		    android:layout_height="wrap_content" 
-		    android:text="Score: "
-		    />
+	    	<TextView android:id="@+id/score" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/score" />
     	
     </LinearLayout>
     
@@ -46,20 +45,17 @@
     	android:orientation="horizontal"
     	android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
-    	android:background="#FFFFFF"
-    	>
+    	android:background="#FFFFFF">
     	
-	    	<Button  
-		    android:layout_width="wrap_content" 
-		    android:layout_height="wrap_content" 
-		    android:text="Round: "
-		    />
+	    	<Button android:id="@+id/trap_button" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/its_a_trap"/>
 		    
-	    	<TextView  
-		    android:layout_width="wrap_content" 
-		    android:layout_height="wrap_content" 
-		    android:text="Score: "
-		    />
+	    	<Button android:id="@+id/not_trap_button"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/not_a_trap"/>
     	
     </LinearLayout>
 	    
