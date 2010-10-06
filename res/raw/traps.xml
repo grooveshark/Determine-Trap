@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<traps>
+    <statement is_trap="true">Admiral! We have enemy ships in sector 47!</statement>
+    <statement is_trap="true">I've just made a deal that'll keep the Empire out of here forever</statement>
+    <statement is_trap="false">New statement 1</statement>
+    <statement is_trap="true">New statement 2</statement>
+    <statement is_trap="false">New statement 3</statement>
+    <statement is_trap="true">New statement 4</statement>
+    <statement is_trap="false">New statement 5</statement>
+    <statement is_trap="true">New statement 6</statement>
+    <statement is_trap="false">New statement 7</statement>
+    <statement is_trap="true">New statement 8</statement>
+</traps>

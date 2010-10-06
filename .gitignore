@@ -1,0 +1,6 @@
+build.properties
+bin/*
+gen/*
+sd/*
+# vim swap files
+*.swp

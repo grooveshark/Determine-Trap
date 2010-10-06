@@ -64,4 +64,21 @@
     -->
     <setup />
 
+    <target name="clean-install" depends="clean">
+        <antcall target="install"/>
+    </target>
+
+    <target name="clean-reinstall" depends="clean">
+        <antcall target="reinstall"/>
+    </target>
+
+    <target name="clean">
+        <delete includeemptydirs="true" verbose="true" failonerror="false">
+            <fileset dir="gen/"/>
+        </delete>
+        <delete includeemptydirs="true" verbose="true" failonerror="false">
+            <fileset dir="bin/"/>
+        </delete>
+    </target>
+
 </project>

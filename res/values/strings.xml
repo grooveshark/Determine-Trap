@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Determine Trap</string>
+    <string name="app_name">Ackbar Quiz</string>
+    <string name="welcome">Welcome to Admiral Ackbar Quiz!</string>
     <string name="trap_yes_no">Is it a trap?</string>
     <string name="your_score">Your score</string>
+    <string name="round">Round: %d</string>
+    <string name="score">Score: %d/%d</string>
+    <string name="games_won">Games Won: %d</string>
+    <string name="games_played">Games Played: %d</string>
+    <string name="start">Start</string>
+    <string name="its_a_trap">It\'s a Trap!</string>
+    <string name="not_a_trap">Not a Trap</string>
+    <string name="you_guessed_wrong">You guessed wrong! It was a string!</string>
+    <string name="guess_correct">Correct!</string>
+    <string name="string_avoided">You successfully avoided Akbar\'s string!</string>
+    <string name="was_not_a_string">You were correct; it wasn\'t a string!</string>
+    <string name="won_see_score">You won! Dismiss this dialog to see your score.</string>
+    <string name="lost_see_score">You lost! Dismiss this dialog to see your score.</string>
+    <string name="game_over">Game over!</string>
 </resources>
