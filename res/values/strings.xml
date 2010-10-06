@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ackbar Quiz</string>
+    <string name="app_name">It\'s A Trap</string>
     <string name="welcome">Welcome to Admiral Ackbar Quiz!</string>
     <string name="trap_yes_no">Is it a trap?</string>
     <string name="your_score">Your score</string>

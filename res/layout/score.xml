@@ -34,7 +34,7 @@
     	android:layout_centerHorizontal="true"
     	android:layout_below="@id/questions_correct"
     	android:layout_marginTop="20dip"
-    	android:src="@drawable/ackbar"
+    	android:src="@drawable/ewok"
     	/>
     	
    	<TextView  

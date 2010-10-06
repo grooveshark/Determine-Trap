@@ -6,7 +6,7 @@
 
     <application android:name=".TrapApplication"
                  android:label="@string/app_name"
-                 android:icon="@drawable/icon">
+                 android:icon="@drawable/ackbar_icon">
 
         <activity android:name="StartActivity"
                   android:label="@string/app_name">
