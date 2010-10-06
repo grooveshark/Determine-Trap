@@ -11,10 +11,10 @@
     <string name="start">Start</string>
     <string name="its_a_trap">It\'s a Trap!</string>
     <string name="not_a_trap">Not a Trap</string>
-    <string name="you_guessed_wrong">You guessed wrong! It was a string!</string>
+    <string name="you_guessed_wrong">You guessed wrong! It was a trap!</string>
     <string name="guess_correct">Correct!</string>
-    <string name="string_avoided">You successfully avoided Akbar\'s string!</string>
-    <string name="was_not_a_string">You were correct; it wasn\'t a string!</string>
+    <string name="trap_avoided">You successfully avoided Akbar\'s trap!</string>
+    <string name="was_not_a_trap">You were correct; it wasn\'t a trap!</string>
     <string name="won_see_score">You won! Dismiss this dialog to see your score.</string>
     <string name="lost_see_score">You lost! Dismiss this dialog to see your score.</string>
     <string name="game_over">Game over!</string>
