@@ -11,7 +11,7 @@
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginTop="50dip"
 	    android:gravity="center"
-	    android:text="Welcome to Admiral Ackbar Quiz!"
+	    android:text="@string/welcome"
 	    android:textColor="#FFFFFF"
 	    android:textSize="30dip"
 	    />
@@ -33,7 +33,7 @@
 	    android:layout_centerHorizontal="true"
 	    android:layout_below="@id/ackbar_image"
 	    android:layout_marginTop="30dip"
-	    android:text="Games Played: 0"
+	    android:text="@string/games_played"
 	    android:textColor="#FFFFFF"
 	    android:textSize="20dip"
 	    />
@@ -44,17 +44,18 @@
 	    android:layout_height="wrap_content" 
 	    android:layout_centerHorizontal="true"
 	    android:layout_below="@id/games_played"
-	    android:text="Games Won: 0"
+	    android:text="@string/games_won"
 	    android:textColor="#FFFFFF"
 	    android:textSize="20dip"
 	    /> 
 	    
 	 <Button 
+        android:id="@+id/start_button"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
 	    android:layout_alignParentBottom="true"
 	    android:layout_margin="30dip"
-	    android:text="Start"
+	    android:text="@string/start"
 	    /> 
 	    
 </RelativeLayout>
