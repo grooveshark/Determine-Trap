@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <traps>
     <statement is_trap="true">Admiral! We have enemy ships in sector 47!</statement>
-    <statement is_trap="true">I've just made a deal that\'ll keep the Empire out of here forever</statement>
+    <statement is_trap="true">I've just made a deal that'll keep the Empire out of here forever</statement>
     <statement is_trap="true">Aren’t you a little short for a stormtrooper?</statement>
     <statement is_trap="true">Is he not to destroy the Sith and bring balance to the Force?</statement>
-    <statement is_trap="false">Luke, at that speed do you think you\'ll be able to pull out in time?</statement>
+    <statement is_trap="false">Luke, at that speed do you think you'll be able to pull out in time?</statement>
     <statement is_trap="true">Size matters not. Judge me by my size, do you?</statement>
     <statement is_trap="false">I look forward to completing your training. In time you will call me master.</statement>
     <statement is_trap="false">Always two there are, a master and an apprentice.</statement>
     <statement is_trap="false">I find your lack of faith disturbing.</statement>
-    <statement is_trap="false">In my experience, there\'s no such thing as luck.</statement>
+    <statement is_trap="false">In my experience, there's no such thing as luck.</statement>
     <statement is_trap="false">A Jedi uses the Force for knowledge and defense, never for attack.</statement>
     <statement is_trap="false">Beware of the dark side.</statement>
     <statement is_trap="true">http://www.lemonparty.org</statement>
